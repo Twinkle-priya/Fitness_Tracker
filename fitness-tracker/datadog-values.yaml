@@ -1,0 +1,17 @@
+datadog:
+  apiKeyExistingSecret: datadog-secret
+  clusterName: fitness-tracker-cluster
+
+  logs:
+    enabled: true
+    containerCollectAll: true
+
+  apm:
+    enabled: true
+
+clusterAgent:
+  enabled: true
+
+agents:
+  tolerations:
+    - operator: Exists
