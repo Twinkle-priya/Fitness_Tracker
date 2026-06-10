@@ -1,0 +1,6 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  name: aws-alb-gateway-class
+spec:
+  controllerName: elbv2.k8s.aws/aws-load-balancer-controller
